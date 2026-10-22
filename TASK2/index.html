@@ -1,0 +1,80 @@
+﻿
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Панель путешественника | TASK2</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="app">
+        <aside class="sidebar">
+            <a class="brand" href="#">
+                <span class="brand-icon">☢</span>
+                <span>TASK<span class="accent">2</span></span>
+            </a>
+
+            <div class="sidebar-label">НАВИГАЦИЯ</div>
+            <div class="nav-item active">▦ &nbsp; Панель управления</div>
+            <div class="nav-item">⌖ &nbsp; Маршрут</div>
+            <div class="nav-item">▤ &nbsp; Заметки</div>
+
+            <div class="sidebar-bottom">
+                <span class="status-dot"></span>
+                СИСТЕМА АКТИВНА
+            </div>
+        </aside>
+
+        <main class="main">
+            <header class="topbar">
+                <div>
+                    <div class="eyebrow">ЗОНА ОТЧУЖДЕНИЯ / TASK2</div>
+                    <h1>Панель <span class="accent">путешественника</span></h1>
+                    <p class="subtitle">Всё необходимое для следующей экспедиции.</p>
+                </div>
+                <div class="top-status">
+                    <span class="status-dot"></span>
+                    ONLINE
+                </div>
+            </header>
+
+            <section class="welcome">
+                <div>
+                    <div class="eyebrow">ТЕКУЩАЯ ЛОКАЦИЯ</div>
+                    <h2>Припять, Украина</h2>
+                    <p>51.405° N &nbsp; 30.057° E</p>
+                </div>
+                <div class="warning-mark">☢</div>
+            </section>
+
+            <section class="section-heading">
+                <div>
+                    <div class="eyebrow">ИНСТРУМЕНТЫ</div>
+                    <h2>Мои виджеты</h2>
+                </div>
+                <span id="widget-count" class="widget-count">03 ВИДЖЕТА</span>
+            </section>
+
+            <section class="add-controls">
+                <button class="add-button" data-add-widget="todo">＋ Задачи</button>
+                <button class="add-button" data-add-widget="weather">＋ Погода</button>
+                <button class="add-button" data-add-widget="currency">＋ Валюта</button>
+            </section>
+
+            <div id="dashboard-message" class="dashboard-message" role="status"></div>
+            <section id="dashboard-grid" class="dashboard-grid"></section>
+
+            <footer>
+                <span>TASK2 // TRAVEL SYSTEM</span>
+                <span>БУДЬТЕ ОСТОРОЖНЫ</span>
+            </footer>
+        </main>
+    </div>
+
+    <script type="module" src="./main.js"></script>
+    <div class="bottom-image" aria-hidden="true">
+    <img src="./images/1.jpeg" alt="">
+</div>
+</body>
+</html>
